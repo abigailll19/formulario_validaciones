@@ -1,0 +1,76 @@
+body {
+  font-family: arial, sans-serif;
+  background-color: #eee5e5;
+  /* sin margenes por defecto */
+  margin: 0;
+  /* espacio interno alrededor */
+  padding: 20px;
+}
+
+/* estilo para el título principal  ylo centra*/
+h1 {
+  text-align: center;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  /* esquinas redondeadas */
+  border-radius: 10px;
+  /* ancho máximo del cuadro */
+  max-width: 500px;
+  /* centra el contenedor horizontalmente */
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* estilos para los campos de texto, correo y teléfono */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* boton */
+button {
+  /* espacio interno en horizontal y vertical */
+  padding: 10px 20px;
+  background-color: #3a1044;
+  /* sin borde visible */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  /* cursor tipo puntero al pasar el mouse */
+  cursor: pointer;
+}
+
+/* cambia el fondo a un tono más claro al pasar el raton */
+button:hover {
+  background-color: #a88da6;
+}
+
+/* estilo para la tabla de clientes */
+table {
+  width: 100%;
+  /* elimina espacios entre celdas */
+  border-collapse: collapse;
+  /* separa la tabla del formulario */
+  margin-top: 30px;
+}
+
+/* estilos comunes para encabezados y celdas */
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* estilo para encabezados de tabla */
+th {
+  background-color: #9178ad;
+  color: white;
+}

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>FORMULARIO</title>
+  <link rel="stylesheet" href="formulario_validaciones.css">
+</head>
+
+<body>
+  <h1>Registro de Clientes</h1>
+
+  <div class="form-container">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" required>
+
+    <label for="cedula">Cédula:</label>
+    <input type="text" id="cedula" required maxlength="10">
+
+     <label for="pais">País:</label>
+    <select id="pais" required>
+      <option value="">Seleccionar país</option>
+      <option value="Argentina">Argentina</option>
+      <option value="México">México</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Chile">Chile</option>
+      <option value="Perú">Perú</option>
+      <option value="España">España</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <button onclick="agregarCliente()">Agregar Cliente</button>
+  </div>
+
+  <table id="tablaClientes">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Teléfono</th>
+        <th>País</th>
+        <th>Cedula</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se agregarán los clientes -->
+    </tbody>
+  </table>
+
+  <script src="formulario_validaciones.js"></script>
+</body>
+</html>
